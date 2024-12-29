@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-service/cart-service-all/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-service/cart-service-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service/inventory-service-all/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service/inventory-service-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service/inventory-service-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib-global/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lms-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/order-service-all/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/order-service-all/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/order-service-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/order-service-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
