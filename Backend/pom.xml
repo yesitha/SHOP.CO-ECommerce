@@ -17,7 +17,7 @@
         <module>lib-common</module>
         <module>lib-global</module>
         <module>eureka-server</module>
-        <module>lms-gateway</module>
+        <module>shopco-gateway</module>
         <module>auth-service</module>
         <module>payment-service</module>
         <module>notification-service</module>

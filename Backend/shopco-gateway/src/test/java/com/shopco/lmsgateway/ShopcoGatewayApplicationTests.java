@@ -6,7 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootTest
-class LmsGatewayApplicationTests {
+class ShopcoGatewayApplicationTests {
 
 	@Test
 	void contextLoads() {

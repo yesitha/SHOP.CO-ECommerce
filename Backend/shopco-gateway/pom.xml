@@ -9,7 +9,7 @@
 	</parent>
 	<packaging>jar</packaging>
 	<groupId>com.shopco.backend</groupId>
-	<artifactId>lms-gateway</artifactId>
+	<artifactId>shopco-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>shopco-gateway</name>
 	<description>Gateway for SHOPCO-ECOMMERCE</description>

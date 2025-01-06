@@ -9,10 +9,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 //@OpenAPIDefinition(info = @Info(title = "LMS API Gateway", version = "1.0", description = "Documentation API Gateway v1.0"))
-public class LmsGatewayApplication {
+public class ShopcoGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LmsGatewayApplication.class, args);
+		SpringApplication.run(ShopcoGatewayApplication.class, args);
 	}
 
 //	@Bean
