@@ -5,11 +5,31 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.shopco.backend</groupId>
-        <artifactId>shopco-ecommerce</artifactId>
+        <artifactId>backend</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <artifactId>notification-service</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>4.1.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.shopco.backend</groupId>
+            <artifactId>lib-common</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.shopco.backend</groupId>
+            <artifactId>lib-common</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <groupId>com.shopco.backend</groupId>
 
     <properties>

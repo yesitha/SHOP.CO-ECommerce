@@ -1,7 +1,7 @@
 package com.shopco.service.impl;
 
 import com.shopco.repository.DemoRepository;
-import com.shopco.response.dto.DemoResponseDto;
+import com.shopco.response.dto.DemoResponseDto2;
 import com.shopco.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ public class DemoServiceImpl implements DemoService {
 
 
     @Override
-    public List<DemoResponseDto> test(UUID id) throws CredentialNotFoundException, URISyntaxException {
+    public List<DemoResponseDto2> test(UUID id) throws CredentialNotFoundException, URISyntaxException {
         return List.of();
     }
 }

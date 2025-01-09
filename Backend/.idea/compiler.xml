@@ -2,17 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cart-service-service" />
-        <module name="lms-gateway" />
         <module name="order-service-all" />
         <module name="inventory-service-dao" />
         <module name="lib-global" />
         <module name="inventory-service-service" />
+        <module name="shopco-gateway" />
         <module name="lib-common" />
+        <module name="cart-service-dao" />
         <module name="eureka-server" />
         <module name="notification-service" />
         <module name="auth-service" />
@@ -20,17 +22,6 @@
         <module name="inventory-service-all" />
         <module name="order-service-dao" />
         <module name="cart-service-all" />
-      </profile>
-      <profile name="Annotation profile for shopco-ecommerce" enabled="true">
-        <sourceOutputDir name="../../order-service/order-service-dao/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../order-service/order-service-dao/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="order-service-dao (1)" />
-      </profile>
-      <profile name="Annotation profile for order-service-service" enabled="true">
-        <sourceOutputDir name="../../cart-service/cart-service-service/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../cart-service/cart-service-service/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="order-service-service" />
       </profile>
     </annotationProcessing>
@@ -40,6 +31,7 @@
       <module name="auth-service" options="-parameters" />
       <module name="cart-service" options="" />
       <module name="cart-service-all" options="-parameters" />
+      <module name="cart-service-dao" options="-parameters" />
       <module name="cart-service-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="inventory-service" options="" />
@@ -48,14 +40,13 @@
       <module name="inventory-service-service" options="-parameters" />
       <module name="lib-common" options="-parameters" />
       <module name="lib-global" options="-parameters" />
-      <module name="lms-gateway" options="-parameters" />
       <module name="notification-service" options="-parameters" />
       <module name="order-service" options="" />
       <module name="order-service-all" options="-parameters" />
       <module name="order-service-dao" options="-parameters" />
-      <module name="order-service-dao (1)" options="-parameters" />
       <module name="order-service-service" options="-parameters" />
       <module name="payment-service" options="-parameters" />
+      <module name="shopco-gateway" options="-parameters" />
     </option>
   </component>
 </project>

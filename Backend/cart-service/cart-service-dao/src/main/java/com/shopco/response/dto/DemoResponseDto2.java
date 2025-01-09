@@ -12,7 +12,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DemoResponseDto {
+public class DemoResponseDto2 {
     @JsonProperty("announcement_id")
     private UUID announcementId;
     @JsonProperty("announcement_title")

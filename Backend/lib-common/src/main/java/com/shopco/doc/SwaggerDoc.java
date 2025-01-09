@@ -74,7 +74,7 @@ public class SwaggerDoc {
 //    }
 
 	@Bean
-	public OpenAPI itGuraOpenAPI() {
+	public OpenAPI ShopCOOpenAPI() {
 		// Define Info
 		Info info = new Info().title("Shopco E-Commerce API Documentation")
 				.version("1.0")
