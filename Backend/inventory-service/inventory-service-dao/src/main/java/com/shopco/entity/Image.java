@@ -1,46 +1,42 @@
 package com.shopco.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.util.UUID;
 
 @Entity
-@Table(name = "review", schema = "inventory_service")
+@Table(name = "image", schema = "inventory_service")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+public class Image {
 
-public class Review {
-
-    @Column(name = "review_id")
+    @Column(name = "image_id")
     @Id
-
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID reviewId;
+    private UUID imageId;
 
-    @Column(name = "ratinng")
-    private Integer rating;
+    @Lob
+    @Column(name = "image_content")
+    private Byte[] imageContent;
 
-    @Column(name = "comment")
-    private String comment;
+    @Column(name = "image_name")
+    private String imageName;
 
     @Column(name = "created_date")
     @CreatedDate
     private String createdDate;
 
-    @Column(name = "user_id")
+    @Column(name = "updated_date")
+    @LastModifiedDate
+    private String updatedDate;
 
-    private UUID userId;
-
-    @Column(name = "order_id")
-
-    private UUID orderId;
 
 }

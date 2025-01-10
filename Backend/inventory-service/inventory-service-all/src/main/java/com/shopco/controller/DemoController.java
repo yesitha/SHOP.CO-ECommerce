@@ -19,7 +19,7 @@ public class DemoController {
     @Autowired
     private DemoService demoService;
 
-    @GetMapping(OrderServiceURI.DEMO + OrderServiceURI.test+ URIPrefix.BY_ID)
+    @GetMapping(OrderServiceURI.DEMO + OrderServiceURI.test + URIPrefix.BY_ID)
     public AppResponse<List<DemoResponseDto>> getAllClasses(@PathVariable UUID id) {
 
         try {

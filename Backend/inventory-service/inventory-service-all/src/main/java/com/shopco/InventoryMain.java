@@ -1,4 +1,5 @@
 package com.shopco;
+
 import com.shopco.util.BootMain;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

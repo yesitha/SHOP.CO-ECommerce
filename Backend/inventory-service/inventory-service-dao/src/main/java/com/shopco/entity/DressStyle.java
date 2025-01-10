@@ -16,20 +16,20 @@ import java.util.UUID;
 @Setter
 public class DressStyle {
 
-        @Column(name = "dress_style_id")
-        @Id
+    @Column(name = "dress_style_id")
+    @Id
 
-        @GeneratedValue(strategy = GenerationType.AUTO)
-        private UUID dressStyleId;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID dressStyleId;
 
-        @Column(name = "dress_style_name")
-        private String dressStyleName;
+    @Column(name = "dress_style_name")
+    private String dressStyleName;
 
-        @Column(name = "dress_style_description")
-        private String dressStyleDescription;
+    @Column(name = "dress_style_description")
+    private String dressStyleDescription;
 
-        @Lob
-        @Column(name = "dress_style_image")
-        private  Byte[]  dressStyleImage;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Image dressStyleImage;
 
 }

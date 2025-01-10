@@ -15,6 +15,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Setter
+//To be removed
 public class Demo {
 
     @Column(name = "id")

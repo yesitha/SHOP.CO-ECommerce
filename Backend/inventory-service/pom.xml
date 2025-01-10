@@ -23,7 +23,6 @@
     </properties>
 
 
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -62,7 +61,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
 
 
 </project>

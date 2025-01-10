@@ -55,10 +55,8 @@ public class Product {
     @JoinColumn(name = "product_id")
     private List<Discount> discounts;
 
-
-
-
-
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<ProductVariant> productVariants;
 
 
 }
