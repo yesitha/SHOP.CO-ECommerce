@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.Date;
 import java.util.UUID;
@@ -17,11 +18,12 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Setter
+@EntityListeners(AuditingEntityListener.class)
 public class Discount {
 
     @Column(name = "discount_id")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID discountId;
 
     @Column(name = "discount_name")

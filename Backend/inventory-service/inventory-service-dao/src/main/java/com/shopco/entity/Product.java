@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -18,11 +20,12 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Setter
+@EntityListeners(AuditingEntityListener.class)
 public class Product {
     @Column(name = "product_id")
     @Id
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID productId;
 
     @Column(name = "name")
@@ -33,29 +36,29 @@ public class Product {
 
     @Column(name = "created_date")
     @CreatedDate
-    private String createdDate;
+    private Date createdDate;
 
     @Column(name = "updated_date")
     @LastModifiedDate
-    private String updatedDate;
+    private Date updatedDate;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany( fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private List<Review> reviews;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
-    private List<FAQ> faqs;
+    private List<Faq> faqs;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany( fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private List<DressStyle> dressStyles;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany( fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private List<Discount> discounts;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
     private List<ProductVariant> productVariants;
 
 

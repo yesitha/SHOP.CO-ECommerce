@@ -1,6 +1,7 @@
 package com.shopco.entity;
 
 
+import com.shopco.enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,7 +9,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -18,11 +21,12 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Setter
+@EntityListeners(AuditingEntityListener.class)
 public class ProductVariant {
     @Column(name = "product_variant_id")
     @Id
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID productVariantId;
 
     @Column(name = "price")
@@ -32,15 +36,16 @@ public class ProductVariant {
     private Integer quantity;
 
     @Column(name = "status")
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private ProductStatus status;
 
     @Column(name = "created_date")
     @CreatedDate
-    private String createdDate;
+    private Date createdDate;
 
     @Column(name = "updated_date")
     @LastModifiedDate
-    private String updatedDate;
+    private Date updatedDate;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_variant_id")

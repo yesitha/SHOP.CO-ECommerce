@@ -11,6 +11,6 @@ public class NotificationMain {
     public static void main(String[] args) {
 
         BootMain.main(args);
-        SpringApplication.run(NotificationMain.class);
+        SpringApplication.run(NotificationMain.class, args);
     }
 }

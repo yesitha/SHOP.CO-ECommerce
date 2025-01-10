@@ -20,7 +20,7 @@ public class Demo {
 
     @Column(name = "id")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Column(name = "demo_name")

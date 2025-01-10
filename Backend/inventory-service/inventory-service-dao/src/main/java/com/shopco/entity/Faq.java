@@ -2,6 +2,7 @@ package com.shopco.entity;
 
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,28 +12,29 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.Date;
-import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Table(name = "sub_category", schema = "inventory_service")
+@Table(name = "faq", schema = "inventory_service")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @EntityListeners(AuditingEntityListener.class)
-public class SubCategory {
+public class Faq {
 
-    @Column(name = "sub_category_id")
+    @Column(name = "faq_id")
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID subCategoryId;
+    private UUID faqId;
 
-    @Column(name = "sub_category_name")
-    private String subCategoryName;
+    @Column(name = "question")
+    @NotBlank(message = "Question cannot be empty")
+    private String question;
 
-    @Column(name = "description")
-    private String description;
+    @Column(name = "answer")
+    @NotBlank(message = "Question cannot be empty")
+    private String answer;
 
     @Column(name = "created_date")
     @CreatedDate
@@ -42,10 +44,4 @@ public class SubCategory {
     @LastModifiedDate
     private Date updatedDate;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Image subCategoryImage;
-
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "sub_category_id")
-    private List<Product> products;
 }
