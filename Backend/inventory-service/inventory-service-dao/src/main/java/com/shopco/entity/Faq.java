@@ -33,7 +33,7 @@ public class Faq {
     private String question;
 
     @Column(name = "answer")
-    @NotBlank(message = "Question cannot be empty")
+    @NotBlank(message = "Answer cannot be empty")
     private String answer;
 
     @Column(name = "created_date")

@@ -44,7 +44,7 @@ public class Category {
     @LastModifiedDate
     private Date updatedDate;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     private List<SubCategory> subCategories;
 }

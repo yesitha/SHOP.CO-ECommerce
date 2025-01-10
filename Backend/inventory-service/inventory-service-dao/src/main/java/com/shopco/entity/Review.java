@@ -2,10 +2,8 @@ package com.shopco.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -29,6 +27,7 @@ public class Review {
     private UUID reviewId;
 
     @Column(name = "ratinng")
+    @NonNull
     private Integer rating;
 
     @Column(name = "comment")
@@ -41,11 +40,12 @@ public class Review {
 
 
     @Column(name = "user_id")
+    @NonNull
 
     private UUID userId;
 
     @Column(name = "order_id")
-
+    @NotNull
     private UUID orderId;
 
 }
