@@ -3,6 +3,8 @@ package com.shopco.entity;
 
 import com.shopco.enums.ProductStatus;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,6 +35,8 @@ public class ProductVariant {
     private Double price;
 
     @Column(name = "quantity")
+    @NotNull
+    @Min(value = 0)
     private Integer quantity;
 
     @Column(name = "status")
