@@ -1,5 +1,6 @@
 package com.shopco.authservice.services;
 
+import com.shopco.exception.ApplicationException;
 import com.shopco.authservice.dto.request.AuthenticationRequest;
 import com.shopco.authservice.dto.request.RegisterRequest;
 import com.shopco.authservice.dto.request.changeRoleRequest;
@@ -7,9 +8,9 @@ import com.shopco.authservice.dto.response.AuthenticationResponse;
 import com.shopco.authservice.entity.Role;
 import com.shopco.authservice.entity.User;
 import com.shopco.authservice.repository.UserRepository;
-import com.itgura.exception.ApplicationException;
-import com.itgura.exception.ValueNotExistException;
 
+
+import com.shopco.exception.ValueNotExistException;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Autowired;

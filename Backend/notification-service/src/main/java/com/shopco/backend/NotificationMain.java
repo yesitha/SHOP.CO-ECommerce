@@ -1,4 +1,5 @@
-package com.shopco;
+package com.shopco.backend;
+
 import com.shopco.util.BootMain;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +7,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class OrderMain {
+public class NotificationMain {
     public static void main(String[] args) {
 
         BootMain.main(args);
-        SpringApplication.run(OrderMain.class);
+        SpringApplication.run(NotificationMain.class, args);
     }
 }

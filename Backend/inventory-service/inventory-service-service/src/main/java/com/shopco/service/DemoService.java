@@ -1,7 +1,7 @@
 package com.shopco.service;
 
-import com.itgura.exception.ApplicationException;
-import com.itgura.exception.BadRequestRuntimeException;
+import com.shopco.exception.ApplicationException;
+import com.shopco.exception.BadRequestRuntimeException;
 import com.shopco.response.dto.DemoResponseDto;
 
 import javax.security.auth.login.CredentialNotFoundException;

@@ -77,7 +77,7 @@ public class SecurityConfig {
                     authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                     SecurityContextHolder.getContext().setAuthentication(authentication);
                 }
-            }else {
+            } else {
                 System.out.println("Authorization header is null");
             }
             filterChain.doFilter(request, response);
@@ -96,6 +96,7 @@ public class SecurityConfig {
                     .collect(Collectors.toList());
         }
     }
+
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate() {

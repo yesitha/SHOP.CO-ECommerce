@@ -15,11 +15,12 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Setter
+//To be removed
 public class Demo {
 
     @Column(name = "id")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Column(name = "demo_name")

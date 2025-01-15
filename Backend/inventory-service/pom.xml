@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.shopco.backend</groupId>
-        <artifactId>shopco-ecommerce</artifactId>
+        <artifactId>backend</artifactId>
         <version>1.0.0</version>
     </parent>
     <packaging>pom</packaging>
@@ -21,7 +21,6 @@
         <java.version>17</java.version>
         <spring-cloud.version>2023.0.1</spring-cloud.version>
     </properties>
-
 
 
     <dependencies>
@@ -62,7 +61,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
 
 
 </project>
